@@ -77,14 +77,16 @@
         <section class="notice">
           <h2 class="hidden">notice</h2>
           <ul class="tabmenu cf">
+            <!-- 공지사항 탭만 active -->
             <li class="active">
               <a href="#notice">공지사항</a>
             </li>
-            <li class="active">
+            <li>
               <a href="#gallery">갤러리</a>
             </li>
           </ul>
           <div class="tabcontent">
+            <!-- 공지사항 콘텐츠는 기본 활성화 -->
             <div id="notice" class="active">
               <ul>
                 <li>
@@ -109,22 +111,24 @@
                 </li>
               </ul>
             </div>
+
+            <!-- 갤러리 콘텐츠는 기본적으로 숨김 -->
             <div id="gallery">
               <ul class="cf">
                 <li>
-                  <a href="#">
-                    <img src="images/gallery1.jpg" alt="gallery1" />
-                  </a>
+                  <a href="#"
+                    ><img src="images/gallery1.jpg" alt="gallery1"
+                  /></a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src="images/gallery2.jpg" alt="gallery2" />
-                  </a>
+                  <a href="#"
+                    ><img src="images/gallery2.jpg" alt="gallery2"
+                  /></a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src="images/gallery3.jpg" alt="gallery3" />
-                  </a>
+                  <a href="#"
+                    ><img src="images/gallery3.jpg" alt="gallery3"
+                  /></a>
                 </li>
               </ul>
             </div>
@@ -152,7 +156,7 @@
         <div class="copyright">
           <p>COPYRIGHT&copy;by WebDesign. ALL RIGHTS RESERVED</p>
         </div>
-        <ul class="sns">
+        <ul class="sns cf">
           <li>
             <a href="#">
               <img src="images/sns1.png" alt="facebook" />
@@ -168,7 +172,7 @@
           </li>
         </ul>
       </footer>
-      <div id="popup" class="active">
+      <div id="popup">
         <div class="popup_content">
           <h2>은빛 억새 축제</h2>
           <p>어쩌고 저쩌고</p>
@@ -176,5 +180,7 @@
         </div>
       </div>
     </div>
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/main.js"></script>
   </body>
 </html>
