@@ -1,0 +1,50 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+}
+.cf:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+img {
+  vertical-align: top;
+}
+.tabmenu li {
+  float: left;
+}
+.tabmenu li a {
+  display: block;
+  border: 1px solid#ccc;
+  border-bottom: none;
+  background: #ccc;
+}
+.tabmenu li.active a {
+  background: #fff;
+}
+.tabcontent {
+  padding: 10px;
+  border: 1px solid#ccc;
+  position: relative;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.tabcontent > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.tabcontent > div.active {
+  display: block;
+}
+#gallery ul li {
+  float: left;
+  width: 70px;
+}
