@@ -19,6 +19,7 @@ aside li {
   background-color: #ddd;
   color: #333;
 }
+/* 이부분을 해야 sub 부분이 안보임  요거만 있어도 nav 슬라이드 구현 가능 */
 .sub_menu {
   display: none;
 }

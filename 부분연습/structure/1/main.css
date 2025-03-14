@@ -78,37 +78,3 @@ footer .copyright {
   height: 50px;
   background: #ddd;
 }
-/* 이부분을 해야 sub 부분이 안보임  요거만 있어도 nav 슬라이드 구현 가능 */
-.sub_menu {
-  display: none;
-}
-/* 이부분을 해야 slide 부분이 안보임  요거만 있어도 slide 슬라이드 구현 가능 여기는 포지션 absolute까지  */
-.slide {
-  position: absolute;
-  display: none;
-}
-/* 이부분을 해야 tabmenu가 위아래가 아니라 양옆으로 붙음 */
-.tabmenu li {
-  float: left;
-}
-/* 선택한 tab만 보이도록 하기 위함  */
-.tabcontent > div {
-  display: none;
-}
-/* 선택한 tab만 보이도록 하기 위함  */
-.tabcontent > div.active {
-  display: block;
-}
-#popup {
-  display: none;
-}
-#popup .popup_content {
-  background: #fff;
-  position: absolute;
-  width: 400px;
-  left: 400px;
-  top: 200px;
-}
-#popup.active {
-  display: block;
-}
