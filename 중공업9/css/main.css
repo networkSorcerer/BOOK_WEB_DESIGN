@@ -1,0 +1,110 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: top;
+}
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 1000px;
+  height: 650px;
+}
+.wrapper aside {
+  width: 200px;
+  height: 100%;
+  float: left;
+  background: #aaa;
+}
+.wrapper main {
+  width: 800px;
+  float: right;
+  height: 100%;
+  background: #bbb;
+}
+
+aside .logo {
+  height: 100px;
+  background: #999;
+}
+aside nav {
+  height: 550px;
+  background: #888;
+}
+main .slides {
+  height: 350px;
+  background: #777;
+}
+.contents > * {
+  height: 200px;
+  float: left;
+  width: 33.3333%;
+}
+.contents .notice {
+  background: #666;
+}
+.contents .banner {
+  background: #555;
+}
+.contents .quick_links {
+  background: #444;
+}
+.main_menu {
+  border: 1px solid #111;
+}
+.sub_menu {
+  border: 1px solid #111;
+
+  display: none;
+}
+.slide {
+  position: absolute;
+  display: none;
+}
+.tabmenu > li {
+  border: 1px solid #111;
+  float: left;
+}
+.tabmenu > li.active {
+  border: 1px solid #111;
+  float: left;
+  background: #fff;
+}
+.tabcontent > div {
+  border: 1px solid #111;
+  display: none;
+}
+.tabcontent > div.active {
+  display: block;
+}
+#popup {
+  display: none;
+}
+.popup_content {
+  width: 400px;
+  padding: 10px;
+  left: 400px;
+  top: 200px;
+  background: #fff;
+  position: absolute;
+}
+#popup.active {
+  display: block;
+}
+#popup .close {
+  width: 100px;
+  text-align: center;
+  border: 1px solid #111;
+}
