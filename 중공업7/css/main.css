@@ -1,0 +1,101 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+}
+img {
+  vertical-align: top;
+}
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 1000px;
+  height: 650px;
+}
+
+.wrapper aside {
+  width: 200px;
+  height: 100%;
+  float: left;
+  background: #aaa;
+}
+
+.wrapper main {
+  float: right;
+  width: 800px;
+  height: 100%;
+  background: #bbb;
+}
+
+aside .logo {
+  height: 100px;
+  background: #999;
+}
+aside nav {
+  height: 550px;
+  background: 800px;
+  background: #888;
+}
+
+main .slides {
+  height: 350px;
+  background: #777;
+}
+.contents > * {
+  height: 200px;
+  width: 33.3333%;
+  float: left;
+}
+
+.contents .notice {
+  float: left;
+  background: #666;
+}
+
+.contents .banner {
+  float: left;
+  background: #555;
+}
+
+.contents .quick_links {
+  float: left;
+  background: #444;
+}
+
+.sub_menu {
+  display: none;
+}
+.slide {
+  position: absolute;
+  display: none;
+}
+.tabmenu > li {
+  float: left;
+}
+.tabcontent > div {
+  display: none;
+}
+.tabcontent > div.active {
+  display: block;
+}
+#popup {
+  display: none;
+}
+#popup .popup_content {
+  position: absolute;
+  left: 400px;
+  top: 200px;
+  background: #fff;
+}
+
+#popup.active {
+  display: block;
+}
