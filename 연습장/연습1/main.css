@@ -61,7 +61,6 @@ main .slides {
 footer .logo {
   float: left;
   width: 200px;
-  background: #333;
 }
 footer .menu_copyright {
   float: right;
@@ -74,33 +73,4 @@ footer .footer_menu {
 footer .copyright {
   height: 50px;
   background: #ddd;
-}
-
-.sub_menu {
-  display: none;
-}
-.slide {
-  position: absolute;
-  display: none;
-}
-.tabmenu > li {
-  float: left;
-}
-.tabcontent > div {
-  display: none;
-}
-.tabcontent > div.active {
-  display: block;
-}
-#popup {
-  display: none;
-}
-#popup .popup_content {
-  position: absolute;
-  left: 400px;
-  top: 200px;
-  background: #fff;
-}
-#popup.active {
-  display: block;
 }
