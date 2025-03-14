@@ -38,10 +38,12 @@ img {
 aside .logo {
   height: 100px;
   background: #999;
+  border: #111 solid 1px;
 }
 aside nav {
   height: 550px;
   background: #888;
+  border: #111 solid 1px;
 }
 main .slides {
   height: 350px;
@@ -54,13 +56,16 @@ main .slides {
 }
 .contents .notice {
   background: #666;
+  border: #111 solid 1px;
 }
 .contents .banner {
   background: #555;
+  border: #111 solid 1px;
 }
 
 .contents .quick_links {
   background: #444;
+  border: #111 solid 1px;
 }
 .sub_menu {
   display: none;
@@ -91,4 +96,26 @@ main .slides {
 }
 #popup.active {
   display: block;
+}
+footer .logo {
+  float: left;
+  height: 100px;
+  width: 200px;
+  border: #111 solid 1px;
+}
+
+footer .menu_copyright {
+  float: right;
+  width: 600px;
+  border: #111 solid 1px;
+}
+
+footer .footer_menu {
+  height: 50px;
+
+  border: #111 solid 1px;
+}
+footer .copyright {
+  height: 50px;
+  border: #111 solid 1px;
 }
