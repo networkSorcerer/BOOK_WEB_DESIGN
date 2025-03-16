@@ -1,17 +1,101 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <aside></aside>
-      <main></main>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper cf">
+        <aside>
+            <h2 class="logo"></h2>
+            <nav>
+                <ul class="main_menu">
+                    <li><a href="#">nav</a>
+                        <ul class="sub_menu">
+                            <li>sub</li>
+                            <li>sub</li>
+                            <li>sub</li>
+                            <li>sub</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">nav</a>
+                        <ul class="sub_menu">
+                            <li>sub</li>
+                            <li>sub</li>
+                            <li>sub</li>
+                            <li>sub</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">nav</a>
+                        <ul class="sub_menu">
+                            <li>sub</li>
+                            <li>sub</li>
+                            <li>sub</li>
+                            <li>sub</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">nav</a>
+                        <ul class="sub_menu">
+                            <li>sub</li>
+                            <li>sub</li>
+                            <li>sub</li>
+                            <li>sub</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="cf">
+            <div class="slides">
+                <ul class="slide_container">
+                    <li class="slide"><a href="#"><img src="다운로드.jpg"></a></li>
+                    <li class="slide"><a href="#"><img src="다운로드 (1).jpg"></a></li>
+                    <li class="slide"><a href="#"><img src="다운로드 (2).jpg"></a></li>
+                </ul>
+            </div>
+            <div class="contents cf">
+                <div class="notice">
+                    <ul class="tabmenu cf">
+                        <li><a href="#notice">공지사항</a></li>
+                        <li><a href="#gallery">갤러리</a></li>
+                    </ul>
+                    <div class="tabcontent cf">
+                        <div id="notice" class="active">
+                            <ul>
+                                <li>공지</li>
+                                <li>공지</li>
+                                <li>공지</li>
+                                <li>공지</li>
+                            </ul>
+                        </div>
+                        <div id="gallery">
+                            <ul>
+                                <li>이미지</li>
+                                <li>이미지</li>
+                                <li>이미지</li>
+                                <li>이미지</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner"></div>
+                <div class="quick_links"></div>
+            </div>
+            <footer class="cf"></footer>
+        </main>
+        <div id="popup">
+            <div class="popup_content">
+                <h2>팝업이요</h2>
+                <h2>팝업이요</h2>
+                <h2>팝업이요</h2>
+                <h2>팝업이요</h2>
+                <div class="close">닫기</div>
+            </div>
+        </div>
+        <script src="jquery.js"></script>
+        <script src="main.js"></script>
     </div>
-    <script src="script/jquery-1.12.3.js"></script>
-    <script src="script/main.js"></script>
-  </body>
+</body>
 </html>
