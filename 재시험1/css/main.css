@@ -14,7 +14,7 @@
   vertical-align: top;
 }
 
-.cf:after {
+.cf::after {
   content: "";
   display: block;
   clear: both;
@@ -82,6 +82,98 @@ footer .footer_menu {
 }
 
 footer .copyright {
-  height: 500px;
+  height: 50px;
   background: #ddd;
+}
+
+.main_menu>li a:hover{
+  background-color: #FFB547;
+  color:#333;
+  display: block;
+}
+
+.sub_menu li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.sub_menu li a:hover{
+  background-color: #FFB547;
+}
+.sub_menu {
+  display: none;
+}
+
+.slide_container{
+  width: 100%;
+  position: relative;
+  height: 350px;
+}
+
+.slide{
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+
+.tabmenu > li{
+  float: left;
+}
+
+.tabmenu li a {
+  display: block;
+  padding: 5px 10px;
+  border:1px solid #ccc;
+}
+
+.tabmenu li.active a {
+  background: #fff;
+}
+.tabcontent{
+  position: relative
+}
+
+.tabcontent>div{
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.tabcontent>div.active{
+  display: block;
+}
+
+#gallery ul li{
+  float: left;
+  width: 70px;
+  margin: 0 5px;
+}
+
+#popup{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: 10;
+}
+
+#popup .popup_content{
+  width: 400px;
+  padding: 20px 20px 100px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 400px;
+  top: 200px;
+}
+
+#popup.active {
+  display: block;
 }
