@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+}
+
+.cf::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    vertical-align: top;
+}
+
+.wrapper {
+    width: 1000px;
+    height: 650px;
+}
+
+.wrapper aside {
+    width: 200px;
+    height: 100%;
+    float: left;
+    background: #aaa;
+}
+
+.wrapper main {
+    width: 800px;
+    height: 100%;
+    float: right;
+    background: #bbb;
+}
+
+aside .logo {
+    height: 100px;
+    background: #999;
+}
+
+aside nav {
+    height: 550px;
+    background: #888;
+}
+
+main .slides{
+    height: 350px;
+    background: #777;
+}
+
+.contents > * {
+    height: 200px;
+    float: left;
+    width: 33.3333%;
+}
+
+.contents .notice {
+    background: #666;
+}
+
+.contents .banner {
+    background: #555;
+}
+
+.contents .quick_links{
+    background: #444;
+}
+
+footer .logo {
+    float: left;
+    width: 200px;
+    background: #333;
+}
+
+.sub_menu {
+    display: none;
+}
+
+.slide {
+    position: absolute;
+    display: none;
+}
+
+.tabmenu > li {
+    float: left;
+}
+
+.tabmenu li a {
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+
+.tabcontent > div {
+    display: none;
+}
+
+.tabcontent >div.active {
+    display: block;
+}
+
+#popup {
+    display: none;
+}
+
+#popup .popup_content {
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    background: #fff;
+}
+
+#popup.active {
+    display: block;
+}
