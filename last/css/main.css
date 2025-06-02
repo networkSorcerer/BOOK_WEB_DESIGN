@@ -1,0 +1,43 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "맑은 고딕";
+  box-sizing: border-box;
+}
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrapper {
+  width: 1000px;
+  height: 650px;
+}
+.wrapper aside {
+  width: 200px;
+  height: 100%;
+  background: #aaa;
+  float: left;
+}
+.wrapper main {
+  width: 800px;
+  height: 100%;
+  background: #bbb;
+  float: right;
+}
+aside .logo {
+  height: 100px;
+  background: #999;
+}
+nav {
+  height: 550px;
+  background: #888;
+}
+.slides {
+  height: 350px;
+  background: #777;
+}
