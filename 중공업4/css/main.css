@@ -4,11 +4,11 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: "맑은 고딕";
+  font-family: '맑은 고딕';
   font-size: 14px;
 }
 .cf:after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -57,6 +57,9 @@ main .slides {
 }
 .contents .quick_links {
   background: #444;
+}
+footer {
+  height: 100px;
 }
 footer .logo {
   float: left;
