@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  font-family: "맑은 고딕";
+}
+
+.cf:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.wrapper {
+  width: 1000px;
+  height: 650px;
+}
+
+.wrapper aside {
+  width: 200px;
+  height: 100%;
+  float: left;
+  background: #aaa;
+}
+
+.wrapper main {
+  width: 800px;
+  height: 100%;
+  float: right;
+  background: #bbb;
+}
+
+aside .logo {
+  height: 100px;
+  background: #999;
+}
+
+aside nav {
+  height: 550px;
+  background: #888;
+}
+
+main .slides {
+  height: 350px;
+  background: #777;
+}
+
+.contents > * {
+  width: 33.3333%;
+  height: 200px;
+  float: left;
+}
+
+.contents .notice {
+  background: #666;
+}
+
+.contents .banner {
+  background: #555;
+}
+
+.contents .quick_links {
+  background: #444;
+}
