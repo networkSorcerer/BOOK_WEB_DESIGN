@@ -9,20 +9,166 @@
   <body>
     <div class="wrapper">
       <header class="cf">
-        <h1 class="logo"></h1>
-        <nav></nav>
+        <h1 class="logo">
+          <a href="#"><img src="images/header_logo.png" alt="은빛" /></a>
+        </h1>
+        <nav>
+          <ul class="main_menu cf">
+            <li>
+              <a href="#">이용안내</a>
+              <ul class="sub_menu">
+                <li><a href="#">이용방법</a></li>
+                <li><a href="#">이용방법</a></li>
+                <li><a href="#">이용방법</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이벤트정보</a>
+              <ul class="sub_menu">
+                <li><a href="#">이용방법</a></li>
+                <li><a href="#">이용방법</a></li>
+                <li><a href="#">이용방법</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">프로그램</a>
+              <ul class="sub_menu">
+                <li><a href="#">이용방법</a></li>
+                <li><a href="#">이용방법</a></li>
+                <li><a href="#">이용방법</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+              <ul class="sub_menu">
+                <li><a href="#">이용방법</a></li>
+                <li><a href="#">이용방법</a></li>
+                <li><a href="#">이용방법</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </header>
-      <div class="slides"></div>
+      <div class="slides">
+        <ul class="container">
+          <li class="slide">
+            <a href="#">
+              <img src="images/img1.jpg" alt="은빛억새" />
+              <h2>은빛억새1</h2></a
+            >
+          </li>
+          <li class="slide">
+            <a href="#">
+              <img src="images/img2.jpg" alt="은빛억새" />
+              <h2>은빛억새2</h2></a
+            >
+          </li>
+          <li class="slide">
+            <a href="#">
+              <img src="images/img3.jpg" alt="은빛억새" />
+              <h2>은빛억새3</h2></a
+            >
+          </li>
+        </ul>
+      </div>
       <main class="cf">
-        <section class="notice"></section>
-        <section class="banner"></section>
-        <section class="quick_links"></section>
+        <section class="notice">
+          <h2 class="hidden">notices</h2>
+          <ul class="tabmenu cf">
+            <li class="active">
+              <a href="#notice">공지사항</a>
+            </li>
+            <li>
+              <a href="#gallery">갤러리</a>
+            </li>
+          </ul>
+          <div class="tabcontent">
+            <div id="notice" class="active">
+              <ul>
+                <li>
+                  <a href="#"
+                    >은빛억새축제공지<span class="date">2024.03.01</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >은빛억새축제공지2<span class="date">2024.03.01</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >은빛억새축제공지3<span class="date">2024.03.01</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >은빛억새축제공지4<span class="date">2024.03.01</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="gallery">
+              <ul class="cf">
+                <li>
+                  <a href="#"
+                    ><img src="images/gallery1.jpg" alt="gallery"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="images/gallery2.jpg" alt="gallery"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="images/gallery3.jpg" alt="gallery"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="banner">
+          <a href="#">
+            <h2>banner</h2>
+            <img src="images/banner.jpg" alt="banner" />
+          </a>
+        </section>
+        <section class="quick_links">
+          <a href="#">
+            <h2>바로가기</h2>
+            <img src="images/shortcut.jpg" alt="바로가기" />
+          </a>
+        </section>
       </main>
       <footer class="cf">
-        <div class="logo"></div>
-        <div class="copyright"></div>
-        <ul class="sns"></ul>
+        <div class="logo">
+          <a href="#"><img src="images/header_logo.png" alt="logo" /></a>
+        </div>
+        <div class="copyright">
+          <p>copyright&copy;by WEBDESIGN</p>
+        </div>
+        <ul class="sns cf">
+          <li>
+            <a href="#"><img src="images/sns1.png" alt="1" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/sns2.png" alt="1" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/sns3.png" alt="1" /></a>
+          </li>
+        </ul>
       </footer>
+      <div id="popup">
+        <div class="popup_content">
+          <h2>은빛억새축제</h2>
+          <p>어쩌고 저쩌고</p>
+          <div class="close">닫기</div>
+        </div>
+      </div>
     </div>
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/main.js"></script>
   </body>
 </html>
