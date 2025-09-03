@@ -25,10 +25,7 @@ img {
 header {
   height: 100px;
 }
-.slides {
-  height: 300px;
-  background: #bbb;
-}
+
 main {
   height: 200px;
   background: #fff;
@@ -47,10 +44,120 @@ header .logo {
 header nav {
   width: 720px;
   float: right;
+  z-index: 1;
+  position: relative;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+nav > ul > li {
+  line-height: 40px;
+  width: 180px;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+nav > ul > li a {
+  color: #fff;
+  background: #333;
+  display: block;
+}
+
+nav ul ul a {
+  color: #333;
+  background: #fff;
+  display: block;
+}
+nav > ul > li a:hover {
+  background: #fca148;
+}
+nav ul ul a:hover {
+  background: #49d2fc;
+}
+nav ul ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+nav ul ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+/*슬라이드 부분*/
+
+.slides {
+  overflow: hidden;
+  height: 300px;
+}
+.slide > ul {
+  height: 900px;
+}
+.slide {
+  width: 1200px;
+  height: 300px;
+  position: relative;
+}
+.slides {
+  overflow: hidden;
+  height: 300px;
+}
+.slide > ul {
+  height: 900px;
+}
+.slide {
+  height: 300px;
+  position: relative;
+  width: 1200px;
+}
+.slide h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 25px;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+/* .slide h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+} */
+/* .slides {
+  overflow: hidden;
+  height: 300px;
+}
+.slide > ul {
+  height: 900px;
+}
+.slide {
+  height: 300px;
+  position: relative;
+  width: 1200px;
+} */
+/* .slide h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 25px;
+  color: #fff;
+  transform: translate(-50%, -50%);
+} */
+/* header nav {
+  width: 720px;
+  float: right;
   margin-top: 30px;
   margin-right: 10px;
   z-index: 1;
-}
+} */
 /* header nav {
   width: 720px;
   float: right;
@@ -66,14 +173,13 @@ header nav {
   z-index: 1;
 } */
 
-nav > ul > li {
-  /* nav 대제목? 부분*/
+/* nav > ul > li {
   line-height: 40px;
   float: left;
   width: 180px;
   text-align: center;
   position: relative;
-}
+} */
 /* nav > ul > li {
   line-height: 40px;
   float: left;
@@ -86,12 +192,11 @@ nav > ul > li {
   width: 180px;
   text-align: center;
 } */
-nav > ul > li a {
-  /*대제목 글자 설정*/
+/* nav > ul > li a {
   color: #fff;
-  display: block; /* 글자+ a태그 전체를 다 배경으로 지정 */
+  display: block; 
   background: #333;
-}
+} */
 /* nav > ul > li a {
   color: #fff;
   display: block;
@@ -102,25 +207,23 @@ nav > ul > li a {
   display: block;
   background: #333;
 } */
-nav ul ul li a {
-  /*소제목 글자 설정 */
+/* nav ul ul li a {
   display: block;
   background: #fff;
   color: #333;
-}
-nav > ul > li a:hover {
+} */
+/* nav > ul > li a:hover {
   background: #fca148;
 }
 nav ul ul a:hover {
   background: #49d2fc;
 }
 nav ul ul {
-  /*소제목 부분*/
-  position: absolute; /*대제목의 포지션을 따르도록 하는 설정*/
+  position: absolute;
   left: 0;
   width: 100%;
   display: none;
-}
+} */
 /* nav ul ul {
   position: absolute;
   display: none;

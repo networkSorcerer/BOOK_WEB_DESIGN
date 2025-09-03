@@ -7,62 +7,86 @@
   font-family: "맑은 고딕";
   font-size: 14px;
   color: #333;
-  box-sizing: border-boxd;
+  box-sizing: border-box;
 }
+
 img {
   vertical-align: top;
 }
+
 .cf::after {
   content: "";
   display: block;
   clear: both;
 }
+
 .wrapper {
   width: 1200px;
   margin: 0 auto;
 }
+
 header {
   height: 100px;
-  background: #aaa;
 }
+
 .slides {
   height: 300px;
-  background: #bbb;
+  background: #ccc;
 }
 main {
   height: 200px;
-  background: #ccc;
+  background: #fff;
 }
 footer {
-  height: 100px;
-  background: #ddd;
+  background: #ebebeb;
 }
-
 header .logo {
   width: 200px;
-  background: #999;
   float: left;
-  height: 100%;
+  padding-top: 30px;
 }
 header nav {
-  width: 1000px;
-  background: #888;
+  width: 720px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
+}
+nav > ul > li {
+  line-height: 40px;
+  width: 180px;
   float: left;
-  height: 100%;
+  position: relative;
+  text-align: center;
+}
+nav > ul > li a {
+  display: block;
+  color: #fff;
+  background: #333;
+}
+
+nav ul ul li a {
+  display: block;
+  color: #333;
+  background: #fff;
+}
+nav > ul > li a:hover {
+  background: #fca148;
+}
+nav ul ul a:hover {
+  background: #49d2fc;
+}
+nav ul ul {
+  display: none;
+  left: 0;
+  width: 100%;
+  position: absolute;
 }
 main section {
   width: 400px;
   float: left;
   height: 100%;
-}
-main .notice {
-  background: #777;
-}
-main .banner {
-  background: #666;
-}
-main .quick_links {
-  background: #555;
 }
 
 footer div {
@@ -71,15 +95,175 @@ footer div {
 }
 footer .logo {
   width: 200px;
-  background: #444;
+  padding: 30px 0 0 20px;
 }
 footer .copyright {
   width: 800px;
-  background: #333;
+  text-align: center;
+  line-height: 100px;
 }
 footer .sns {
   width: 200px;
   float: right;
-  background: #222;
-  height: 100%;
+  padding-top: 24px;
+}
+footer .sns li {
+  float: left;
+}
+footer .sns li + li {
+  margin-left: 10px;
+}
+.hidden {
+  display: none;
+}
+.slides {
+  overflow: hidden;
+  height: 300px;
+}
+.slide > ul {
+  height: 900px;
+}
+.slide {
+  height: 300px;
+  width: 1200px;
+  position: relative;
+}
+.slide h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 10px 25px;
+}
+main {
+  height: 200px;
+  background: #fff;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.tabmenu {
+  position: relative;
+  z-index: 1;
+  top: 1px;
+}
+.tabmenu li {
+  float: left;
+}
+.tabmenu li a {
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #ccc;
+}
+.tabmenu li.active a {
+  background: #fff;
+}
+.tabcontent {
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+  height: 150px;
+  box-sizing: border-box;
+}
+.tabcontent > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.tabcontent > div.active {
+  display: block;
+}
+#notice {
+  padding: 0 10px;
+}
+#notice li {
+  line-height: 30px;
+}
+#notice li:nth-child(even) {
+  background: #ccc;
+}
+#notice li a:hover {
+  font-weight: bold;
+}
+#gallery {
+  padding: 20px;
+}
+#gallery ul li {
+  float: left;
+  margin-right: 40px;
+}
+#gallery ul li:last-child {
+  margin-right: 0;
+}
+.banner {
+  position: relative;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.banner h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px 25px;
+  transform: translate(-50%, -50%);
+}
+.banner img,
+.quick_links img {
+  width: 100%;
+}
+.quick_links {
+  position: relative;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.quick_links h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 25px;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+.banner a:hover,
+.quick_links a:hover {
+  opacity: 0.5;
+}
+#popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: 10;
+}
+#popup .popup_content {
+  width: 400px;
+  padding: 20px 20px 100px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+#popup .popup_content .close {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 8px;
+}
+#popup.active {
+  display: block;
 }
