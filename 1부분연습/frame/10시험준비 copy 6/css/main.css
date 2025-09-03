@@ -33,7 +33,7 @@ main {
 }
 footer {
   height: 100px;
-  background: #ddd;
+  background: #ebebeb;
 }
 header .logo {
   width: 200px;
@@ -306,30 +306,247 @@ main section {
   float: left;
   height: 100%;
 }
-main .notice {
-  background: #777;
-}
-main .banner {
-  background: #666;
-}
-main .quick_links {
-  background: #555;
-}
+
 footer div {
   float: left;
   height: 100%;
 }
 footer .logo {
   width: 200px;
-  background: #444;
 }
 footer .copyright {
   width: 800px;
-  background: #333;
 }
 footer .sns {
   width: 200px;
   float: right;
-  background: #222;
   height: 100%;
+}
+main {
+  height: 200px;
+  background: #fff;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+/* main {
+  height: 200px;
+  background: #fff;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+main {
+  height: 200px;
+  background: #fff;
+  padding: 10px 0;
+  box-sizing: border-box; 
+}*/
+.tabmenu li {
+  float: left;
+}
+/* .tabmenu li {
+  float: left;
+}
+.tabmenu li {
+  float: left;
+} */
+
+.tabmenu li a {
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #ccc;
+}
+/* .tabmenu li a {
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #ccc;
+}
+.tabmenu li a {
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #ccc;
+} */
+.tabmenu li.active a {
+  background: #fff;
+}
+/* .tabmenu li.active a {
+  background: #fff;
+}
+.tabmenu li.active a {
+  background: #fff;
+} */
+.tabcontent {
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+  height: 150px;
+  box-sizing: border-box;
+}
+.tabmenu {
+  position: relative;
+  z-index: 1;
+  top: 1px;
+}
+/* .tabmenu {
+  position: relative;
+  z-index: 1;
+  top: 1px;
+}
+.tabmenu {
+  position: relative;
+  z-index: 1;
+  top: 1px;
+} */
+/* .tabcontent {
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+  height: 150px;
+  box-sizing: border-box;
+}
+.tabcontent {
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+  height: 150px;
+  box-sizing: border-box;
+} */
+.tabcontent > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.hidden {
+  display: none;
+}
+/* .tabcontent > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.tabcontent > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+} */
+.tabcontent > div.active {
+  display: block;
+}
+#notice {
+  padding: 0 10px;
+}
+/* #notice {
+  padding: 0 10px;
+}
+#notice {
+  padding: 0 10px;
+} */
+#notice li span {
+  float: right;
+}
+/* #notice li span {
+  float: right;
+}
+#notice li span {
+  float: right;
+} */
+#notice li {
+  line-height: 30px;
+}
+/* #notice li {
+  line-height: 30px;
+}
+#notice li {
+  line-height: 30px;
+} */
+#notice li:nth-child(even) {
+  background: #ccc;
+}
+/* #notice li:nth-child(even) {
+  background: #ccc;
+}
+#notice li:nth-child(even) {
+  background: #ccc;
+} */
+#notice li a:hover {
+  font-weight: bold;
+}
+/* #notice li a:hover {
+  font-weight: bold;
+}
+#notice li a:hover {
+  font-weight: bold;
+} */
+#gallery {
+  padding: 20px;
+}
+/* #gallery {
+  padding: 20px;
+}
+#gallery {
+  padding: 20px;
+} */
+#gallery ul li {
+  float: left;
+  margin-right: 40px;
+}
+/* #gallery ul li {
+  float: left;
+  margin-right: 40px;
+}
+#gallery ul li {
+  float: left;
+  margin-right: 40px;
+} */
+
+#gallery ul li:last-child {
+  margin-right: 0;
+}
+/* #gallery ul li:last-child {
+  margin-right: 0;
+}
+#gallery ul li:last-child {
+  margin-right: 0;
+} */
+.banner {
+  position: relative;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.banner h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  color: #fff;
+}
+.banner img {
+  width: 100%;
+}
+.quick_links {
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.quick_links h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 25px;
+  color: #fff;
+}
+.quick_links img {
+  width: 100%;
 }
