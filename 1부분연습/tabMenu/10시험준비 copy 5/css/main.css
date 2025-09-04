@@ -1,0 +1,131 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  box-sizing: border-box;
+  color: #333;
+}
+img {
+  vertical-align: top;
+}
+.cf::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+main {
+  height: 200px;
+  background: #fff;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+main section {
+  /*main 내부 section 설정*/
+  width: 400px;
+  float: left;
+  height: 100%;
+}
+.tabmenu li {
+  float: left; /*탭메뉴 옆으로 정렬*/
+}
+.tabmenu li a {
+  display: block; /*영역 전체 선택*/
+  padding: 5px 10px; /*여백*/
+  border: 1px solid #ccc; /*테두리*/
+  border-bottom: none; /*아래 테두리 제거*/
+  background: #ccc; /*배경색 지정*/
+}
+.tabmenu li.active a {
+  /*ative 클래스 배경 별도지정*/
+  background: #fff;
+}
+.tabcontent {
+  padding: 10px; /*여백 지정*/
+  border: 1px solid #ccc; /*테두리 지정*/
+  position: relative; /*상위 포지션 설정*/
+  height: 150px; /*높이 설정*/
+  box-sizing: border-box; /*삐져나옴 방지*/
+}
+.tabcontent > div {
+  position: absolute; /*하위 포지션 설정*/
+  left: 0; /*가로 꽉 채우기*/
+  right: 0; /*가로 꽉 채우기*/
+  display: none; /*보이지 않기*/
+}
+.tabcontent > div.active {
+  display: block; /*active 클래스 보이기 설정*/
+}
+/*공지 tab 데코레이션 부분 */
+#notice {
+  padding: 0 10px;
+}
+#notice li {
+  line-height: 30px;
+}
+#notice li span {
+  float: right;
+}
+#notice li:nth-child(even) {
+  background: #ccc;
+}
+#gallery {
+  padding: 20px;
+}
+#gallery ul li {
+  float: left;
+  margin-right: 40px; /*오른쪽 여백*/
+}
+#gallery ul li:last-child {
+  margin-right: 0; /*마지막은 여백 없이*/
+}
+.tabmenu {
+  position: relative;
+  z-index: 1;
+  top: 1px;
+}
+.banner {
+  position: relative;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.banner h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 25px;
+  color: #fff;
+}
+.banner img {
+  /*이것도 중요*/
+  width: 100%;
+}
+.quick_links {
+  position: relative;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.quick_links h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+.quick_links img {
+  width: 100%;
+}
