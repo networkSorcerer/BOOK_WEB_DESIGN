@@ -1,0 +1,67 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  box-sizing: border-box;
+  color: #333;
+}
+img {
+  vertical-align: top;
+}
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto; /*틀림*/
+}
+header {
+  height: 100px;
+}
+header .logo {
+  width: 200px;
+  float: left;
+  margin-top: 30px;
+}
+header nav {
+  float: right;
+  width: 720px; /*틀림*/
+  margin-top: 30px;
+  margin-right: 10px;
+  position: relative; /*틀림*/
+}
+nav > ul > li {
+  position: relative;
+  line-height: 40px;
+  width: 180px;
+  float: left;
+  text-align: center;
+}
+nav > ul > li a {
+  background: #333;
+  display: block;
+  color: #fff;
+}
+nav > ul > li a:hover {
+  background: #fca148;
+}
+nav ul ul li a {
+  background: #fff;
+  color: #333;
+  display: block;
+}
+nav ul ul a:hover {
+  background: #49d2fc;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
