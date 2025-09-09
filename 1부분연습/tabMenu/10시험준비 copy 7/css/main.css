@@ -1,0 +1,135 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  box-sizing: border-box;
+  color: #333;
+}
+img {
+  vertical-align: top;
+}
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+main {
+  height: 200px;
+  background: #fff;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+main section {
+  width: 400px;
+  float: left;
+  height: 100%;
+}
+.tabmenu li {
+  /*탭메뉴 가로 정렬*/
+  float: left;
+}
+.tabmenu li a {
+  /*탭메뉴 디자인*/
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #ccc;
+}
+.tabmenu li.active a {
+  /*active 배경지정*/
+  background: #fff;
+}
+.tabcontent {
+  /*탭 콘텐트 박스 디자인*/
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: relative; /*아래 div의 앵커역할?*/
+  height: 150px;
+  box-sizing: border-box;
+}
+.tabcontent > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.tabcontent > div.active {
+  display: block;
+}
+#notive {
+  padding: 0 10px;
+}
+#notice li {
+  line-height: 30px;
+}
+#notice li span {
+  float: right;
+}
+#notice li:nth-child(even) {
+  background: #ccc;
+}
+#gallery {
+  padding: 20px;
+}
+#gallery ul li {
+  float: left;
+  margin-right: 40px;
+}
+#gallery ul li:last-child {
+  margin-right: 0;
+}
+.tabmenu {
+  position: relative;
+  z-index: 1;
+  top: 1px;
+}
+.banner {
+  position: relative;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.banner h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 25px;
+  color: #fff;
+}
+.banner img {
+  width: 100%;
+}
+.quick_links {
+  position: relative;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.quick_links h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 25px;
+  color: #fff;
+}
+.quick_links img {
+  width: 100%;
+}
+.banner a:hover,
+.quick_links a:hover {
+  opacity: 0.5;
+}
