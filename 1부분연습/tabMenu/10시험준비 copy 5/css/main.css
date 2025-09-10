@@ -89,7 +89,7 @@ main section {
 #gallery ul li:last-child {
   margin-right: 0; /*마지막은 여백 없이*/
 }
-.tabmenu {
+.tabmenu { 
   position: relative;
   z-index: 1;
   top: 1px;

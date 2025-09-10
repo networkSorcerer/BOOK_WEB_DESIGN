@@ -1,0 +1,135 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: top;
+}
+.cf::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+main {
+  height: 200px;
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: #fff;
+}
+main section {
+  float: left;
+  width: 400px;
+  height: 100%;
+}
+.tabmenu li {
+  float: left;
+}
+.tabmenu li a {
+  display: block;
+  background: #ccc;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+.tabmenu li.active a {
+  background: #fff;
+}
+.tabcontent {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 150px;
+  box-sizing: border-box;
+}
+.tabcontent > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.tabcontent > div.active {
+  display: block;
+}
+.banner {
+  position: relative;
+  padding: 0 10px;
+  overflow: hidden;
+}
+#notice {
+  padding: 0 10px;
+}
+#notice li {
+  line-height: 30px;
+}
+#notice li span {
+  float: right;
+}
+#notice li:nth-child(even) {
+  background: #ccc;
+}
+.tabmenu {
+  z-index: 1;
+  top: 1px;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+.banner a:hover {
+  opacity: 0.5;
+}
+
+.quick_links {
+  position: relative;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.quick_links img {
+  width: 100%;
+}
+.quick_links h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+.quick_links a:hover {
+  opacity: 0.5;
+}
+#gallery {
+  padding: 20px;
+}
+#gallery ul li {
+  float: left;
+  margin-right: 40px;
+}
+#gallery ul li:last-child {
+  margin-right: 0;
+}
