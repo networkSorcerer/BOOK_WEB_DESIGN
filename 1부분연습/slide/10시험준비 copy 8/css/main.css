@@ -1,0 +1,44 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: top;
+}
+.cf::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.slides {
+  overflow: hidden;
+  height: 300px;
+}
+.slide > ul {
+  height: 900px;
+}
+.slide {
+  height: 300px;
+  width: 1200px;
+  position: relative;
+}
+.slide h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}

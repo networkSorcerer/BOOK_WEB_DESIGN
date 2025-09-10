@@ -1,0 +1,68 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: top;
+}
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  height: 100px;
+}
+header .logo {
+  width: 200px;
+  margin-top: 30px;
+  float: left;
+}
+header nav {
+  position: relative;
+  float: right;
+  width: 720px;
+  margin-top: 30px;
+  z-index: 1;
+  margin-right: 10px;
+}
+nav > ul > li {
+  position: relative;
+  float: left;
+  line-height: 40px;
+  width: 180px;
+  text-align: center;
+}
+nav > ul > li a {
+  color: #fff;
+  background: #333;
+  display: block;
+}
+nav > ul > li a:hover {
+  background: #fca148;
+}
+nav ul ul li a {
+  background: #fff;
+  color: #333;
+  display: block;
+}
+nav ul ul a:hover {
+  background: #49d2fc;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
