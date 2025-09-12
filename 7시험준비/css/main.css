@@ -1,0 +1,265 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: top;
+}
+
+.cf::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  height: 100px;
+}
+header .logo {
+  width: 200px;
+  float: left;
+  margin-top: 30px;
+}
+header nav {
+  width: 720px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
+}
+nav > ul > li {
+  line-height: 40px;
+  width: 180px;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
+nav > ul > li a {
+  display: block;
+  background: #333;
+  color: #fff;
+}
+nav > ul > li a:hover {
+  background: #fca148;
+}
+nav ul ul li a {
+  background: #fff;
+  color: #333;
+  display: block;
+}
+nav ul ul a:hover {
+  background: #49d2fc;
+}
+nav ul ul {
+  left: 0;
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+.slides {
+  height: 300px;
+  overflow: hidden;
+}
+.slide ul {
+  height: 900px;
+}
+.slide {
+  height: 300px;
+  width: 1200px;
+  position: relative;
+}
+
+.slide h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+main {
+  box-sizing: border-box;
+  height: 200px;
+  padding: 10px 0;
+  background: #fff;
+}
+main section {
+  float: left;
+  width: 400px;
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
+.tabmenu li {
+  float: left;
+}
+.tabmenu li a {
+  display: block;
+  padding: 5px 10px;
+  background: #ccc;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+.tabmenu li.active a {
+  background: #fff;
+}
+.tabcontent {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  height: 150px;
+  position: relative;
+}
+.tabcontent > div {
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+}
+.tabcontent > div.active {
+  display: block;
+}
+#notice {
+  padding: 0 10px;
+}
+#notice > ul > li {
+  line-height: 30px;
+
+  width: 100%;
+}
+#notice > ul > li span {
+  float: right;
+}
+#notice li:nth-child(even) {
+  background: #ccc;
+}
+#gallery {
+  padding: 20px;
+}
+#gallery ul li {
+  float: left;
+  margin-right: 40px;
+}
+#gallery ul li:last-child {
+  margin-right: 0;
+}
+.tabmenu {
+  top: 1px;
+  position: relative;
+  z-index: 1;
+}
+.banner {
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.banner img {
+  width: 100%;
+}
+.banner h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.banner a:hover {
+  opacity: 0.5;
+}
+.quick_linsk {
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.quick_linsk img {
+  width: 100%;
+}
+.quick_linsk h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.quick_linsk a:hover {
+  opacity: 0.5;
+}
+footer {
+  height: 100px;
+  background: #ebebeb;
+}
+footer > div {
+  float: left;
+}
+footer .logo {
+  width: 200px;
+  padding: 30px 0px 0px 20px;
+  float: left;
+}
+footer .copyright {
+  width: 800px;
+  text-align: center;
+  padding-top: 24px;
+}
+footer .sns {
+  float: left;
+  width: 200px;
+  padding-top: 24px;
+}
+footer .sns li {
+  float: left;
+}
+footer .sns li + li {
+  margin-left: 10px;
+}
+#popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+#popup .popup_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 30px 20px 100px 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+#popup .close {
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+  padding: 5px 8px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+#popup.active {
+  display: block;
+}
