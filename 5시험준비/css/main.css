@@ -1,0 +1,259 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: top;
+}
+.cf::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  height: 100px;
+}
+header .logo {
+  width: 200px;
+  float: left;
+  margin-top: 30px;
+}
+header nav {
+  float: right;
+  width: 720px;
+  position: relative;
+  margin-top: 30px;
+  margin-right: 10px;
+  z-index: 1; /*이거 뺴먹음*/
+}
+nav > ul > li {
+  line-height: 40px;
+  width: 180px;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+nav > ul > li a {
+  background: #333;
+  display: block;
+  color: #fff;
+}
+nav > ul > li a:hover {
+  background: #fca148;
+}
+nav ul ul li a {
+  background: #fff;
+  color: #333;
+  display: block;
+}
+nav ul ul a:hover {
+  background: #49d2fc;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.slides {
+  height: 300px;
+  overflow: hidden;
+}
+.slide ul {
+  height: 900px;
+}
+
+.slide {
+  height: 300px;
+  width: 1200px;
+  position: relative; /*.slide에 포지션 설정*/
+}
+.slide h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+main {
+  box-sizing: border-box;
+  height: 200px;
+  padding: 10px 0;
+  background: #fff;
+}
+main section {
+  width: 400px;
+  float: left;
+  height: 100%; /*굉장히 중요*/
+}
+.hidden {
+  display: none;
+}
+.tabmenu > li a {
+  display: block;
+  background: #ccc;
+  float: left;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+.tabmenu > li.active a {
+  background: #fff;
+}
+.tabcontent {
+  border: 1px solid #ccc;
+  height: 150px;
+  padding: 10px;
+  position: relative; /*빼먹음*/
+  box-sizing: border-box; /*빼먹음*/
+}
+.tabcontent > div {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.tabcontent > div.active {
+  display: block;
+}
+#notice {
+  padding: 0 10px;
+}
+#gallery {
+  padding: 20px;
+}
+#notice ul li {
+  line-height: 30px;
+}
+#notice ul li span {
+  float: right;
+}
+#notice ul li:nth-child(even) {
+  background: #ccc;
+}
+.tabmenu {
+  position: relative;
+  top: 1px;
+  z-index: 1;
+}
+#gallery ul li {
+  float: left;
+  margin-right: 40px;
+}
+
+#gallery ul li:last-child {
+  margin-right: 0;
+}
+.banner {
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.banner h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+.banner img {
+  width: 100%;
+}
+.banner a:hover {
+  opacity: 0.5;
+}
+.quick_links {
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.quick_links h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+.quick_links img {
+  width: 100%;
+}
+.quick_links a:hover {
+  opacity: 0.5;
+}
+footer {
+  height: 100px;
+  background: #ebebeb;
+}
+
+footer .logo {
+  margin-top: 30px;
+  width: 200px;
+  height: 100%;
+}
+footer > div {
+  float: left;
+}
+footer .copyright {
+  margin-top: 30px;
+  width: 800px;
+  text-align: center;
+  height: 100%;
+}
+footer .sns {
+  width: 200px;
+  float: right;
+  margin-top: 30px;
+}
+.sns li {
+  float: left;
+  margin-right: 10px;
+}
+#popup {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  display: none;
+  z-index: 10;
+}
+#popup .popup_content {
+  width: 400px;
+  padding: 20px 20px 100px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+#popup .popup_content .close {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 8px;
+}
+#popup.active {
+  display: block;
+}
